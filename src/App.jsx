@@ -8,6 +8,7 @@ import Testimonials from "./components/Testimonials";
 import Aboutus from "./components/Aboutus";
 import Contact from "./components/Contact";
 import { useEffect } from "react";
+import Login from "./pages/login";
 // Animation package
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -30,6 +31,7 @@ const App = () => {
       <Testimonials />
       <Aboutus />
       <Contact />
+      <Login/>
       <footer className="p-3 text-center">
         <h6 className="mb-3">Law Minder</h6>
         <p>LawMinder © All CopyRights Reserved 2023</p>
