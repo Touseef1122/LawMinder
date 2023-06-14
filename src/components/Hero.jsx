@@ -1,8 +1,15 @@
 // import content
-import { useEffect } from "react";
+import { useEffect,useState } from "react";
 import { content } from "../Content";
+import Login from "./Login";
+
+import { useNavigate } from "react-router-dom";
+// import { Link } from "react-router-dom";
+
 const Hero = () => {
-  const { hero } = content;
+  const { hero} = content;
+  const navigate=useNavigate();
+  
 
   return (
     <section id="home" className="overflow-hidden">
@@ -14,7 +21,7 @@ const Hero = () => {
         >
           <h1 className="rotate-90 absolute top-[30%] right-[-15%] text-[#EAF2FA]">
             {hero.firstName}{" "}
-            <span className="text-dark_primary">{hero.LastName}</span>
+            <span className="text-dark_primary" >{hero.LastName}</span>
           </h1>
         </div>
 
@@ -22,8 +29,8 @@ const Hero = () => {
         <div className="pb-16 px-6 pt-5" data-aos="fade-down">
           <h2>{hero.title}</h2>
           <br />
-          <div className="flex justify-end">
-            <button className="btn">{hero.btnText}</button>
+          <div className="flex justify-end" >
+          <button className="btn" onClick={()=>navigate('signup')}> {hero.btnText}</button> 
           </div>
           <div className="flex flex-col gap-10 mt-10">
             {hero.hero_content.map((content, i) => (

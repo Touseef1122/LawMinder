@@ -1,8 +1,8 @@
 import { content } from "../Content";
-
+import { useNavigate } from "react-router-dom";
 const Aboutus = () => {
   const {  Aboutus } = content;
-
+  const navigate=useNavigate();
   return (
     <section className="bg-bg_light_primary" id="about">
       <div className="md:container px-5 pt-14">
@@ -33,7 +33,7 @@ const Aboutus = () => {
           >
             <p className="leading-7 ">{Aboutus.para}</p>
             <br />
-            <button className="btn bg-dark_primary text-white">
+            <button className="btn bg-dark_primary text-white"  onClick={()=>navigate('/knowmore')}>
               {Aboutus.btnText}
             </button>
           </div>

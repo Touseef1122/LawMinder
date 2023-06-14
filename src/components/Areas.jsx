@@ -26,6 +26,8 @@ const  Areas= () => {
   const [modalIsOpen, setIsOpen] = useState(false);
   const [selectSkill, setSelectSkill] = useState(null);
 
+
+
   function openModal() {
     setIsOpen(true);
   }
