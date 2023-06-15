@@ -8,6 +8,8 @@ import justice from "./assets/images/Skills/justice.png";
 import insurance from "./assets/images/Skills/insurance.png";
 import Healthcare from "./assets/images/Skills/healthcare.png";
 
+import signup from "./assets/images/Hireme/signup.png"
+
 import services_logo1 from "./assets/images/Services/health.jfif.jpg";
 import services_logo2 from "./assets/images/Services/services-4.jfif";
 import services_logo3 from "./assets/images/Services/services-5.jfif";
@@ -24,6 +26,15 @@ import avatar4 from "./assets/images/Testimonials/avatar4.png";
 
 import Hireme_person from "./assets/images/Hireme/about.png";
 import Hireme_person2 from "./assets/images/Hireme/person2.png";
+//icons for know more
+// import {BiLogoGmail} from "react-icons/bi";
+// import {BiSolidPhoneCall} from "react-icons/bi";
+import {AiFillInstagram} from "react-icons/ai";
+import {BsAlarmFill} from "react-icons/bs";
+import {GrSupport} from "react-icons/gr";
+import {CgSupport} from "react-icons/cg"
+import {SiGmail} from "react-icons/si";
+import {BsTelephoneXFill} from "react-icons/bs"
 
 // import icons from react-icons
 import { GrMail } from "react-icons/gr";
@@ -66,6 +77,11 @@ export const content = {
       icon: MdOutlinePermContactCalendar,
     }
   ],
+
+  Login: {
+    link: "#login",
+  },
+  
   hero: {
     title: "Legal Management Services",
     firstName: "Law",
@@ -82,6 +98,55 @@ export const content = {
         text: "Legal expertise",
       },
     ],
+  },
+  KnowMore:{
+    title:"Transforming Legal for Professionals ",
+    image:signup,
+    para1:"The Case Lawyer is a Pakistan based law firm with leading practices in many of the most dynamic sectors. We are an exciting, forward-thinking law firm with a particular focus on Information Technology, Telecommunication, Cybercrimes, Financial & Corporate crimes and Family disputes, preferably Overseas Pakistani.",
+    para2:"We believe “Technology is the future”, so we choose a collaborative approach with an intense focus on the end-user and consider carefully how to shape our services to add the most value to our clients.",
+    para3:"We provide an online meeting platform where they can communicate with us and deliver their grievance in an actual manner.",
+    para4:"We are proud to have established long-standing client relationships with leading Tech Companies; Overseas Pakistanis, Local Authorities, State Institutions and non-profit organisations.",
+    para5:"As a full service law firm, we are able to support you on every aspect of your business and personal life providing relevant, realistic legal solutions that help you to navigate the complexities.",
+    social_media:  [
+      {
+        text: "eishshaukat219@gmail.com",
+        icon:SiGmail,
+        link: "mailto:eishashaukat219@gmail.com",
+      },
+      {
+        text: "+03238459887",
+        icon: BsTelephoneXFill,
+        link: "https://wa.me/1234567890",
+      },
+      {
+        text: "shehrox_dxb",
+        icon: BsInstagram,
+        link: "https://instagram.com/shehrox_dxb?igshid=NTc4MTIwNjQ2YQ==",
+      },
+      {
+        text: "Working hours Mon-Sun: 9am – 9pm",
+        icon: BsAlarmFill,
+
+      },
+      {
+        text: "24/7 Support",
+        icon: CgSupport,
+
+      },
+    
+    
+    ],
+    know_content: [
+      {
+        count: "4.5 ",
+        text: "Our Best Skilled Attorneys, Trust Score ",
+      },
+      {
+        count: "20+",
+        text: "Legal expertise",
+      },
+    ],
+    
   },
   Areas: {
     title: "What We Do",
@@ -163,6 +228,7 @@ export const content = {
     ],
   },
   Team: {
+    link:"#Team",
     title: "Team",
     subtitle: "Our Lawyers",
     image: person_project,

@@ -9,6 +9,10 @@ import LawyersTeam from './LawyersTeam';
 import Testimonials from './Testimonials';
 import Aboutus from "./Aboutus";
 import Contact from "./Contact";
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2de1a074909228c9ce0aed6b5bc3eea5194b4dec
 const Pages = () => {
   return (
     <div>

@@ -7,6 +7,7 @@ const Navbar = () => {
   const { nav } = content;
   const [showMenu, setShowMenu] = useState(false);
   const [active, setActive] = useState(0);
+  
 
   return (
     <div className="w-full flex justify-center">

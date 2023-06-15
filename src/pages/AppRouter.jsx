@@ -7,7 +7,11 @@ const AppRouter = () => {
     <Router>
       <Routes>
         <Route path="/login">
+<<<<<<< HEAD
           <Login/>
+=======
+          <Login />
+>>>>>>> 2de1a074909228c9ce0aed6b5bc3eea5194b4dec
         </Route>
      
       </Routes>
