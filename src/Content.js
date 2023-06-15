@@ -27,11 +27,14 @@ import avatar4 from "./assets/images/Testimonials/avatar4.png";
 import Hireme_person from "./assets/images/Hireme/about.png";
 import Hireme_person2 from "./assets/images/Hireme/person2.png";
 //icons for know more
-import {BiLogoGmail} from "react-icons/bi";
-import {BiSolidPhoneCall} from "react-icons/bi";
+// import {BiLogoGmail} from "react-icons/bi";
+// import {BiSolidPhoneCall} from "react-icons/bi";
 import {AiFillInstagram} from "react-icons/ai";
 import {BsAlarmFill} from "react-icons/bs";
 import {GrSupport} from "react-icons/gr";
+import {CgSupport} from "react-icons/cg"
+import {SiGmail} from "react-icons/si";
+import {BsTelephoneXFill} from "react-icons/bs"
 
 // import icons from react-icons
 import { GrMail } from "react-icons/gr";
@@ -107,12 +110,12 @@ export const content = {
     social_media:  [
       {
         text: "eishshaukat219@gmail.com",
-        icon: BiLogoGmail,
+        icon:SiGmail,
         link: "mailto:eishashaukat219@gmail.com",
       },
       {
         text: "+03238459887",
-        icon: BiSolidPhoneCall,
+        icon: BsTelephoneXFill,
         link: "https://wa.me/1234567890",
       },
       {
@@ -127,12 +130,22 @@ export const content = {
       },
       {
         text: "24/7 Support",
-        icon: GrSupport,
+        icon: CgSupport,
 
       },
     
     
-    ]
+    ],
+    know_content: [
+      {
+        count: "4.5 ",
+        text: "Our Best Skilled Attorneys, Trust Score ",
+      },
+      {
+        count: "20+",
+        text: "Legal expertise",
+      },
+    ],
     
   },
   Areas: {

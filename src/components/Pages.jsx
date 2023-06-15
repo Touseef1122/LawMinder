@@ -9,13 +9,12 @@ import LawyersTeam from './LawyersTeam';
 import Testimonials from './Testimonials';
 import Aboutus from "./Aboutus";
 import Contact from "./Contact";
-import KnowMore from './KnowMore';
+
 const Pages = () => {
   return (
     <div>
       <Navbar />
       <Hero />
-      <KnowMore/>
       <Areas />
       <Service />
       <LawyersTeam />

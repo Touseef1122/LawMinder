@@ -36,17 +36,15 @@ const KnowMore = () => {
   };
   return (
     <>
-    <section id="home" className="overflow-hidden">
+    <section id="home" className="overflow-hidden -mt-8">
       <div className="min-h-screen relative flex md:flex-row flex-col-reverse md:items-end justify-center items-center">
         {/* first col */}
         <div className="pb-16 px-6 pt-5" data-aos="fade-down">
           <h2 className="text-center text-3xl">{KnowMore.title}</h2>
           <br />
-          <div className="flex justify-end" >
-          <button className="btn" onClick={()=>navigate('signup')}> {hero.btnText}</button> 
-          </div>
+         
           <div className="flex flex-col gap-10 mt-10">
-            {hero.hero_content.map((content, i) => (
+            {KnowMore.know_content.map((content, i) => (
               <div
                 key={i}
                 data-aos="fade-down"
@@ -74,7 +72,7 @@ const KnowMore = () => {
     </section>
     <section className=" flex items-center lg:flex-row flex-col-reverse gap-5">
       <div className="container flex flex-col items-center lg:items-start">
-      <div className="text-center lg:text-left">
+      <div className="text-center lg:text-left leading-7">
       <p className="text-center lg:text-left">{KnowMore.para1}</p>
       <p className="text-center lg:text-left">{KnowMore.para2}</p>
       <p className="text-center lg:text-left">{KnowMore.para3}</p>
@@ -82,16 +80,16 @@ const KnowMore = () => {
       <p >{KnowMore.para5}</p>
       </div>
       <div className="mt-5">
-      <h2 className="text-center">Our information</h2>
+      <h2 className="title mb-5">Our information</h2>
       <div className="flex-1 flex flex-col gap-5">
             {KnowMore.social_media.map((content, i) => (
               <div
                 key={i}
-                data-aos="fade-down"
+                data-aos="fade-right"
                 data-aos-delay={i * 430}
                 className="flex items-center gap-2"
               >
-                <h4 className="text-white">{createElement(content.icon)}</h4>
+                <h4 className="text-grey">{createElement(content.icon)}</h4>
                 <a className="font-Poppins" href={content.link} target="_blank">
                   {content.text}
                 </a>
