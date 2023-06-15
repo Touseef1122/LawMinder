@@ -1,34 +1,48 @@
-import React, {createElement, useRef } from "react";
-import person from "../assets/images/Hireme/person.png"
+import React, { useRef } from "react";
 import { useNavigate } from "react-router-dom";
-import Login from "./Login";
-import {BsArrowLeftCircleFill} from 'react-icons/bs'
+import { BsArrowLeftCircleFill } from "react-icons/bs";
+
 const Signup = () => {
   const form = useRef();
-  const navigate=useNavigate();
+  const navigate = useNavigate();
 
-  const handleSignup = (e) => {
+  const handleSignup = async (e) => {
     e.preventDefault();
-    // Implement your signup logic here
-    const name = form.current.name.value;
+
+    const username = form.current.username.value;
     const email = form.current.email.value;
     const password = form.current.password.value;
-    const profession = form.current.profession.value;
-    const cnic = form.current.cnic.value;
-    const phoneNumber = form.current.phoneNumber.value;
-    const city = form.current.city.value;
-    // Perform signup/authentication
-    // ...
+
+    try {
+      const response = await fetch("http://127.0.0.1:8000/user/register/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ username, email, password }),
+      });
+
+      if (response.ok) {
+        // Registration successful, perform desired actions
+        console.log("Registration successful!");
+        navigate("/"); // Redirect or perform additional actions
+      } else {
+        // Registration failed, handle error
+        console.error("Registration failed!");
+      }
+    } catch (error) {
+      console.error("An error occurred during registration:", error);
+      // Handle error and display appropriate message
+    }
   };
 
-  const handleLogin = () => {
-    // Implement your login logic here for the login button
-    // ...
-  };
+  const handleLogin = () => {};
 
   return (
     <section className="bg-dark_primary text-white row" id="signup">
-        <button className="col-6 px-5 mt-5" onClick={()=>navigate('/')}><BsArrowLeftCircleFill/></button>
+      <button className="col-6 px-5 mt-5" onClick={() => navigate("/")}>
+        <BsArrowLeftCircleFill />
+      </button>
       <div className="md:container px-5 py-14 col-6">
         <h2 className="title !text-white" data-aos="fade-down">
           Signup
@@ -43,7 +57,7 @@ const Signup = () => {
           >
             <input
               type="text"
-              name="name"
+              name="username"
               placeholder="Name"
               required
               className="border border-slate-600 p-3 rounded"
@@ -62,53 +76,11 @@ const Signup = () => {
               required
               className="border border-slate-600 p-3 rounded"
             />
-            <input
-              type="text"
-              name="profession"
-              placeholder="Profession"
-              required
-              className="border border-slate-600 p-3 rounded"
-            />
-            <input
-              type="text"
-              name="cnic"
-              placeholder="CNIC"
-              required
-              className="border border-slate-600 p-3 rounded"
-            />
-            <input
-              type="text"
-              name="phoneNumber"
-              placeholder="Phone Number"
-              required
-              className="border border-slate-600 p-3 rounded"
-            />
-            <input
-              type="text"
-              name="city"
-              placeholder="City"
-              required
-              className="border border-slate-600 p-3 rounded"
-            />
-            <button className="btn self-start bg-white text-dark_primary">
+
+            <button className="btn self-start bg-white text-dark_primary" onClick={handleSignup}>
               Signup
             </button>
           </form>
-          <div className="flex-1 flex flex-col gap-5">
-            <img
-              src={person}
-              data-aos="slide-up"
-              alt="..."
-              className="h-full object-cover"
-            />
-            Already have an account?
-            <button
-              className="btn self-start bg-white text-dark_primary"
-              onClick={()=>navigate('/login')}
-            >
-              Login
-            </button>
-          </div>
         </div>
       </div>
     </section>

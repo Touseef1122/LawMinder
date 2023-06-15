@@ -66,3 +66,16 @@
 .swiper-pagination-bullet {
   @apply w-3 h-3 bg-dark_primary;
 }
+.loginform{
+  padding-top: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+  /* height: 700px; */
+}
+.imgsize{
+  height: 600px;
+  width: 100%;
+}
+.fromsize{
+  padding-top: 5%;
+}
