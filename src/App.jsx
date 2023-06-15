@@ -1,9 +1,9 @@
 // import components
 import { useEffect } from "react";
 import Pages from "./components/Pages";
-=======
+// =======
 import Login from "./pages/login";
->>>>>>> 3aa7915e12198cfe543b715f7cccadb3097672cb
+// >>>>>>> 3aa7915e12198cfe543b715f7cccadb3097672cb
 // Animation package
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -28,10 +28,10 @@ const App = () => {
       <Route path="/" element={<Pages/>}></Route>
       <Route path="/login" element={<Login/>}></Route>
       <Route path="/signup" element={<Signup/>}></Route>
-<<<<<<< HEAD
-    </Routes>
+{/* <<<<<<< HEAD
+    </Routes> */}
     
-=======
+{/* ======= */}
       <Route path="/knowmore" element={<KnowMore/>}></Route>
     </Routes>
     
