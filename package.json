@@ -21,8 +21,12 @@
     "react-icons": "^4.9.0",
     "react-modal": "^3.16.1",
     "react-router-dom": "^6.12.1",
+<<<<<<< HEAD
     "swiper": "^8.4.7",
     "yup": "^1.2.0"
+=======
+    "swiper": "^8.4.7"
+>>>>>>> 3aa7915e12198cfe543b715f7cccadb3097672cb
   },
   "devDependencies": {
     "@types/react": "^18.0.24",

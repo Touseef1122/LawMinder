@@ -1,10 +1,14 @@
 // import content
 import { useEffect,useState } from "react";
 import { content } from "../Content";
+<<<<<<< HEAD
 import Login from "./Login";
 
 import { useNavigate } from "react-router-dom";
 // import { Link } from "react-router-dom";
+=======
+import Login from "../pages/login";
+>>>>>>> 3aa7915e12198cfe543b715f7cccadb3097672cb
 
 const Hero = () => {
   const { hero} = content;
