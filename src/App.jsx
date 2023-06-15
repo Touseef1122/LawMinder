@@ -1,17 +1,13 @@
 // import components
-import Hero from "./components/Hero";
-import Navbar from "./Layouts/Navbar";
-import Areas from "./components/Areas";
-import Service from "./components/Services";
-import LawyersTeam from "./components/LawyersTeam";
-import Testimonials from "./components/Testimonials";
-import Aboutus from "./components/Aboutus";
-import Contact from "./components/Contact";
 import { useEffect } from "react";
-import Login from "./pages/login";
+import Pages from "./components/Pages";
 // Animation package
 import Aos from "aos";
 import "aos/dist/aos.css";
+import Login from "./components/Login";
+import { Route, Routes } from "react-router-dom";
+import Signup from "./components/Signup";
+
 
 const App = () => {
   useEffect(() => {
@@ -22,21 +18,20 @@ const App = () => {
     });
   }, []);
   return (
+    
     <div className="">
-      <Navbar />
-      <Hero />
-      <Areas />
-      <Service />
-      <LawyersTeam />
-      <Testimonials />
-      <Aboutus />
-      <Contact />
-      <Login/>
+    <Routes>
+      <Route path="/" element={<Pages/>}></Route>
+      <Route path="/login" element={<Login/>}></Route>
+      <Route path="/signup" element={<Signup/>}></Route>
+    </Routes>
+    
       <footer className="p-3 text-center">
         <h6 className="mb-3">Law Minder</h6>
         <p>LawMinder © All CopyRights Reserved 2023</p>
       </footer>
     </div>
+
   );
 };
 
