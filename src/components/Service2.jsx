@@ -8,8 +8,8 @@ import { AiTwotonePhone } from "react-icons/ai";
 import emailjs from "@emailjs/browser";
 import toast, { Toaster } from "react-hot-toast";
 
-const Service1 = () => {
-  const { hero, Service1 } = content;
+const Service2 = () => {
+  const { hero, Service2 } = content;
   const navigate = useNavigate();
 
   const sendEmail = (e) => {
@@ -43,12 +43,12 @@ const Service1 = () => {
           {/* first col */}
           <div className="pb-16 px-6 pt-5 " data-aos="fade-down">
             <h2 className="text-center title !text-white text-3xl">
-              {Service1.title}
+              {Service2.title}
             </h2>
             <br />
 
             <div className="flex flex-col gap-10 mt-10">
-              {Service1.know_content.map((content, i) => (
+              {Service2.know_content.map((content, i) => (
                 <div
                   key={i}
                   data-aos="fade-down"
@@ -66,10 +66,10 @@ const Service1 = () => {
           {/* sec col */}
           <div className="md:h-[37rem] h-96">
             <img
-              src={Service1.image}
-              data-aos="slide-up"
+              src={Service2.image}
+              data-aos="slide-down"
               alt="..."
-              className="h-full object-cover"
+              className="h-full object-cover rounded-lg ml-4"
             />
           </div>
         </div>
@@ -78,18 +78,18 @@ const Service1 = () => {
         <div className="container flex flex-col items-center lg:items-start pt-5">
           <div className="text-center lg:text-left leading-7">
             <div>
-              <h4 className="text-center">{Service1.part}</h4>
+              <h4 className="text-center">{Service2.part}</h4>
             </div>
-            <h6 className="text-center lg:text-left">{Service1.para1}</h6>
-            <h6 className="text-center lg:text-left">{Service1.para2}</h6>
-            <h6 className="text-center lg:text-left">{Service1.para3}</h6>
-            <h6 className="text-center lg:text-left">{Service1.para4}</h6>
-            <h6>{Service1.para5}</h6>
+            <h6 className="text-center lg:text-left">{Service2.para1}</h6>
+            <h6 className="text-center lg:text-left">{Service2.para2}</h6>
+            <h6 className="text-center lg:text-left">{Service2.para3}</h6>
+            <h6 className="text-center lg:text-left">{Service2.para4}</h6>
+            <h6>{Service2.para5}</h6>
           </div>
           <div className="mt-5">
             <h2 className="title mb-5">Our information</h2>
             <div className="flex-1 flex flex-col gap-5">
-              {Service1.social_media.map((content, i) => (
+              {Service2.social_media.map((content, i) => (
                 <div
                   key={i}
                   data-aos="fade-right"
@@ -114,4 +114,4 @@ const Service1 = () => {
   );
 };
 
-export default Service1;
+export default Service2;

@@ -1,6 +1,7 @@
 import { content } from "../Content";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
+import { useNavigate } from "react-router-dom";
 
 // Import Swiper styles
 import "swiper/css";
@@ -10,6 +11,11 @@ import { Pagination } from "swiper";
 
 const LawyersTeam = () => {
   const { Team } = content;
+  const navigate=useNavigate();
+  const handleCardClick = (index) => {
+    const path = `/Profile${index + 1}`;
+    navigate(path);
+  };
   return (
     <section className="bg-bg_light_primary" id="Team">
       <div className="md:container px-5 pt-14 min-h-screen flex flex-col justify-between">
@@ -46,7 +52,7 @@ const LawyersTeam = () => {
                 <img src={content.image} alt="..." />
                 <div className="flex flex-col gap-1 mt-2">
                   <h5 className="font-bold font-Poppins">{content.title}</h5>
-                  <button className="font-bold text-gray self-end">
+                  <button className="font-bold text-gray self-end"  onClick={() => handleCardClick(i)}>
                     View Profile
                   </button>
                 </div>

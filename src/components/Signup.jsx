@@ -40,7 +40,7 @@ const Signup = () => {
 
   return (
     <section className="bg-dark_primary text-white row" id="signup">
-      <button className="col-6 px-5 mt-5" onClick={() => navigate("/")}>
+      <button className="col-6 px-5 mt-5" onClick={() => navigate("/login")}>
         <BsArrowLeftCircleFill />
       </button>
       <div className="md:container px-5 py-14 col-6">

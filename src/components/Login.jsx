@@ -46,7 +46,7 @@ const Login = () => {
 
   return (
     <section className="bg-dark_primary text-white row" id="login">
-      <button className="col-6 px-5 mt-5" onClick={() => navigate("/signup")}>
+      <button className="col-6 px-5 mt-5" onClick={() => navigate("/")}>
         <BsArrowLeftCircleFill />
       </button>
 
@@ -86,7 +86,7 @@ const Login = () => {
               Login
             </button>
             <div className="flex-1 flex flex-col gap-5 justify-content-end">
-              Already have an account?
+              Don't  have an account?
               <button
                 className="btn self-start bg-white text-dark_primary"
                 onClick={() => navigate("/Signup")}

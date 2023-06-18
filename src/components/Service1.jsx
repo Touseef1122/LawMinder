@@ -4,7 +4,6 @@ import { content } from "../Content";
 import Login from "./Login";
 import { useNavigate } from "react-router-dom";
 import { AiTwotonePhone } from "react-icons/ai";
-
 import emailjs from "@emailjs/browser";
 import toast, { Toaster } from "react-hot-toast";
 
@@ -47,7 +46,7 @@ const Service1 = () => {
             </h2>
             <br />
 
-            <div className="flex flex-col gap-10 mt-10">
+            <div className="flex flex-col gap-10 mt-10 ">
               {Service1.know_content.map((content, i) => (
                 <div
                   key={i}
@@ -56,8 +55,8 @@ const Service1 = () => {
                   className={`flex items-center w-80 gap-5
             ${i === 1 && " flex-row-reverse text-right"}  `}
                 >
-                  <h3 className="title !text-white">{content.count}</h3>
-                  <p className="title !text-white">{content.text}</p>
+                  <h3 className="title !text-white  text-2xl font-semibold text-dark">{content.count}</h3>
+                  <p className="title !text-white text-xl">{content.text}</p>
                 </div>
               ))}
             </div>

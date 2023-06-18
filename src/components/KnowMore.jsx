@@ -63,16 +63,23 @@ const KnowMore = () => {
         <div className="md:h-[37rem] h-96">
           <img
             src={KnowMore.image}
+            data-aos="slide-down"
+            alt="..."
+            className="h-full object-cover"
+          />
+          
+        </div>
+        <img
+            src={KnowMore.image1}
             data-aos="slide-up"
             alt="..."
             className="h-full object-cover"
           />
-        </div>
       </div>
     </section>
     <section className=" flex items-center lg:flex-row flex-col-reverse gap-5">
       <div className="container flex flex-col items-center lg:items-start">
-      <div className="text-center lg:text-left leading-7">
+      <div className="text-center lg:text-left leading-7 mt-7">
       <p className="text-center lg:text-left">{KnowMore.para1}</p>
       <p className="text-center lg:text-left">{KnowMore.para2}</p>
       <p className="text-center lg:text-left">{KnowMore.para3}</p>

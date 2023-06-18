@@ -13,6 +13,9 @@ import signup from "./assets/images/Hireme/signup.png";
 import services_logo1 from "./assets/images/Services/health.jfif.jpg";
 import services_logo2 from "./assets/images/Services/services-4.jfif";
 import services_logo3 from "./assets/images/Services/services-5.jfif";
+import ser from "./assets/images/Profile/ser4.png";
+import ser2 from "./assets/images/Profile/ser2.png";
+import ser3 from "./assets/images/Profile/ser5.png";
 
 import project1 from "./assets/images/projects/l1.jpg";
 import project2 from "./assets/images/projects/l2.jpg";
@@ -27,8 +30,8 @@ import avatar4 from "./assets/images/Testimonials/avatar4.png";
 import Hireme_person from "./assets/images/Hireme/about.png";
 import Hireme_person2 from "./assets/images/Hireme/person2.png";
 //icons for know more
-// import {BiLogoGmail} from "react-icons/bi";
-// import {BiSolidPhoneCall} from "react-icons/bi";
+import girl from "./assets/images/Profile/girl.png";
+
 import { AiFillInstagram } from "react-icons/ai";
 import { BsAlarmFill } from "react-icons/bs";
 import { GrSupport } from "react-icons/gr";
@@ -101,6 +104,7 @@ export const content = {
   KnowMore: {
     title: "Transforming Legal for Professionals ",
     image: signup,
+    image1: girl,
     para1:
       "The Case Lawyer is a Pakistan based law firm with leading practices in many of the most dynamic sectors. We are an exciting, forward-thinking law firm with a particular focus on Information Technology, Telecommunication, Cybercrimes, Financial & Corporate crimes and Family disputes, preferably Overseas Pakistani.",
     para2:
@@ -147,7 +151,7 @@ export const content = {
       },
     ],
   },
-  Service1: {
+  Services: {
     title: "Transforming Legal for Professionals ",
     image: signup,
     part: "Litigation and Dispute Resolution",
@@ -192,6 +196,145 @@ export const content = {
       },
     ],
   },
+  Service1: {
+    title: "Transforming Legal for Professionals",
+    image: ser,
+    part: "Litigation and Dispute Resolution",
+    para1:"Litigation refers to the formal process of resolving disputes through the court system, where parties present their cases before a judge or jury. It involves filing legal complaints, conducting discovery, presenting evidence, and arguing the case in court.",
+    para2:"Comprehensive analysis of legal issues and potential outcomes. The decision made by the judge or jury is binding and enforceable. On the other hand, dispute resolution encompasses various methods outside of the court system, including negotiation, mediation, arbitration, and alternative dispute resolution (ADR) techniques.These methods aim to facilitate communication, reach a mutually acceptable resolution, and provide a more flexible and cost-effective approach. Litigation is often seen as a more adversarial and formal process, while dispute resolution focuses on collaboration and finding common ground. ",
+    para3:"Strategic advice on managing and mitigating legal risks",
+    para4:"Alternative dispute resolution methods, such as mediation and arbitration",
+    para5:"Expert legal representation in litigation cases",
+    social_media: [
+      {
+        text: "eishshaukat219@gmail.com",
+        icon: SiGmail,
+        link: "mailto:eishashaukat219@gmail.com",
+      },
+      {
+        text: "+03238459887",
+        icon: BsTelephoneXFill,
+        link: "https://wa.me/1234567890",
+      },
+      {
+        text: "shehrox_dxb",
+        icon: BsInstagram,
+        link: "https://instagram.com/shehrox_dxb?igshid=NTc4MTIwNjQ2YQ==",
+      },
+      {
+        text: "Working hours Mon-Sun: 9am – 9pm",
+        icon: BsAlarmFill,
+      },
+      {
+        text: "24/7 Support",
+        icon: CgSupport,
+      },
+    ],
+ 
+    know_content: [
+      {
+        count: "4.5 ",
+        text: "Our Best Skilled Attorneys, Trust Score ",
+      },
+      {
+        count: "20+",
+        text: "Legal expertise",
+      },
+    ],
+  },
+  Service2: {
+    title: "Contract Drafting and Review in Pakistan ",
+    image: ser3,
+    part: "Contract Drafting and Review",
+    para1:"Contract drafting involves the process of creating legal agreements that outline the rights and obligations of the parties involved. It requires careful consideration of the parties' intentions, applicable laws, and potential risks to ensure a clear and enforceable contract.",
+    para2:"Thorough review of contracts is essential to identify any potential issues or risks. This includes examining the language, terms, conditions, and legal implications of the agreement. Reviewing contracts can help identify gaps, inconsistencies, or provisions that may be unenforceable or disadvantageous to one party.",
+    para3:"Clear and concise language is crucial in contract drafting and review. Ambiguous or poorly worded provisions can lead to misunderstandings and disputes. It is important to use plain language and avoid jargon or overly complex terms that may confuse the parties.",
+    para4:"Contract drafting and review are best carried out by legal professionals or experienced",
+    para5:"contract specialists who possess the knowledge and expertise to navigate complex legal concepts, ensure compliance, and create effective contractual arrangements.",
+    social_media: [
+      {
+        text: "eishshaukat219@gmail.com",
+        icon: SiGmail,
+        link: "mailto:eishashaukat219@gmail.com",
+      },
+      {
+        text: "+03238459887",
+        icon: BsTelephoneXFill,
+        link: "https://wa.me/1234567890",
+      },
+      {
+        text: "shehrox_dxb",
+        icon: BsInstagram,
+        link: "https://instagram.com/shehrox_dxb?igshid=NTc4MTIwNjQ2YQ==",
+      },
+      {
+        text: "Working hours Mon-Sun: 9am – 9pm",
+        icon: BsAlarmFill,
+      },
+      {
+        text: "24/7 Support",
+        icon: CgSupport,
+      },
+    ],
+ 
+    know_content: [
+      {
+        count: "4.5 ",
+        text: "Our Best Skilled Attorneys",
+      },
+      {
+        count: "20+",
+        text: "Legal expertise",
+      },
+    ],
+  },
+  Service3: {
+    title: "Legal Advice and Consultation in Pakistan",
+    image: ser2,
+    part: "Legal Advice and Consultation",
+    para1:"Legal advice and consultation involve providing professional guidance and recommendations to clients regarding their legal rights, responsibilities, and potential courses of action.",
+    para2:"Litigation refers to the legal process of resolving disputes through the court system. It involves the parties presenting their cases before a judge or jury who then make a final decision based on the evidence and arguments presented.",
+    para3:"Strategic advice on managing and mitigating legal risks Dispute resolution encompasses various methods for resolving conflicts outside of the traditional court system. These methods can include negotiation, mediation, arbitration, and alternative dispute resolution (ADR) techniques.",
+    para4:"Alternative dispute resolution methods, such as mediation and arbitration",
+    para5:"Expert legal representation in litigation cases Dispute resolution methods such as negotiation and mediation focus on facilitating communication and reaching a mutually acceptable resolution between the parties involved. These methods can be more flexible, cost-effective, and allow for more creative solutions to disputes.",
+    social_media: [
+      {
+        text: "eishshaukat219@gmail.com",
+        icon: SiGmail,
+        link: "mailto:eishashaukat219@gmail.com",
+      },
+      {
+        text: "+03238459887",
+        icon: BsTelephoneXFill,
+        link: "https://wa.me/1234567890",
+      },
+      {
+        text: "shehrox_dxb",
+        icon: BsInstagram,
+        link: "https://instagram.com/shehrox_dxb?igshid=NTc4MTIwNjQ2YQ==",
+      },
+      {
+        text: "Working hours Mon-Sun: 9am – 9pm",
+        icon: BsAlarmFill,
+      },
+      {
+        text: "24/7 Support",
+        icon: CgSupport,
+      },
+    ],
+ 
+    know_content: [
+      {
+        count: "4.5 ",
+        text: "Our Trust Score ",
+      },
+      {
+        count: "20+",
+        text: "Legal expertise",
+      },
+    ],
+  },
+  
   Areas: {
     title: "What We Do",
     subtitle: "Our Practise Areas",
@@ -286,6 +429,7 @@ export const content = {
       },
     ],
   },
+
   Team: {
     link: "#Team",
     title: "Team",
@@ -297,16 +441,13 @@ export const content = {
         image: project1,
       },
       {
-        title: "Hassan Murtaza",
-        image: project2,
-      },
-      {
         title: "Amjad Babar",
         image: project3,
       },
       {
-        title: "Sara Shabir",
-        image: project1,
+        title: "Hassan Murtaza",
+        image: project2,
+    
       },
     ],
   },
@@ -369,7 +510,70 @@ export const content = {
       },
     ],
   },
+  Profile1:{
+   text:"your experiance",    
+   social_media: [
+    {
+      text: "SaraShabir@gmail.com",
+      icon: GrMail,
+      link: "mailto:eishashaukat219@gmail.com",
+    },
+    {
+      text: "+03238459887",
+      icon: MdCall,
+      link: "https://wa.me/1234567890",
+    },
+    {
+      text: "Sara_Shabir",
+      icon: BsInstagram,
+      link: "https://instagram.com/shehrox_dxb?igshid=NTc4MTIwNjQ2YQ==",
+    },
+  ],
+  },
+ 
+   Profile2:{
+    text:"your experiance",    
+    social_media: [
+     {
+       text: "AmjadBabar@gmail.com",
+       icon: GrMail,
+       link: "mailto:eishashaukat219@gmail.com",
+     },
+     {
+       text: "+03238453458",
+       icon: MdCall,
+       link: "https://wa.me/1234567890",
+     },
+     {
+       text: "Amjad@Baber",
+       icon: BsInstagram,
+       link: "https://instagram.com/shehrox_dxb?igshid=NTc4MTIwNjQ2YQ==",
+     },
+   ],
+   },
+   Profile3:{
+    text:"your experiance",    
+    social_media: [
+     {
+       text: "HassanMurtaza@gmail.com",
+       icon: GrMail,
+       link: "mailto:eishashaukat219@gmail.com",
+     },
+     {
+       text: "+03338459887",
+       icon: MdCall,
+       link: "https://wa.me/1234567890",
+     },
+     {
+       text: "Hassan.Murtaza",
+       icon: BsInstagram,
+       link: "https://instagram.com/shehrox_dxb?igshid=NTc4MTIwNjQ2YQ==",
+     },
+   ],
+   },
   Footer: {
+    
     text: "All © Copy Right Reserved 2022",
   },
 };
+

@@ -9,8 +9,11 @@ import { Route, Routes } from "react-router-dom";
 import Signup from "./components/Signup";
 import KnowMore from "./components/KnowMore";
 import Service1 from "./components/Service1";
-import Service2 from "./components/Service2";
 import Service3 from "./components/Service3";
+import Service2 from "./components/Service2";
+import Profile2 from "./components/Profile2";
+import Profile1 from "./components/Profile1";
+import Profile3 from "./components/Profile3";
 
 const App = () => {
   useEffect(() => {
@@ -30,6 +33,10 @@ const App = () => {
         <Route path="/Service1" element={<Service1 />}></Route>
         <Route path="/Service2" element={<Service2 />}></Route>
         <Route path="/Service3" element={<Service3 />}></Route>
+        <Route path="/profile1" element={<Profile1 />}></Route>
+        <Route path="/profile2" element={<Profile2 />}></Route>
+        <Route path="/profile3" element={<Profile3 />}></Route>
+
       </Routes>
 
       <footer

@@ -1,6 +1,4 @@
 import React from 'react'
-
-
 import Navbar from '../Layouts/Navbar';
 import Hero from './Hero';
 import Areas from "../components/Areas";
@@ -9,6 +7,7 @@ import LawyersTeam from './LawyersTeam';
 import Testimonials from './Testimonials';
 import Aboutus from "./Aboutus";
 import Contact from "./Contact";
+
 const Pages = () => {
   return (
     <div>
@@ -20,6 +19,9 @@ const Pages = () => {
       <Testimonials />
       <Aboutus />
       <Contact />
+    
+     
+    
     </div>
   )
 }
